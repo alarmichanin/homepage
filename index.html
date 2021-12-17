@@ -2,12 +2,283 @@
 <html>
 
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <title>Résumé</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    ― Hello World! &#x1F609;
+    <main>
+        <div class="resume">
+            <div class="header__info fh">
+                <div class="avatar-block">
+                    <img class="contact-info__avatar" src="assets/roman.jpg" alt="Avatar">
+                </div>
+                <div class="ns-block">
+                    <h1 class="contact-info__header">Tkachenko Roman </h1>
+                    <h3 class="contact-info__sub-header">In love with programming</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="resume__block">
+                    <div class="contact_info_container fh">
+                        <div class="contact-info__block">
+                            <a href="https://goo.gl/maps/QFUYadhhVBVa3qVcA" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 384 512">
+                                        <path
+                                            d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>Lutsk, Ukraine</span>
+                            </a>
+                            <a href="https://t.me/iHCKRi" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </div>
+                                <span>@iHCKRi</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/roman-tkachenko-0a40071ab/" rel="author"
+                                class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512">
+                                        <path
+                                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>Tkachenko Roman</span>
+                            </a>
+                        </div>
+                        <div>
+                            <img src=assets/code.gif class="giphy">
+                        </div>
+                        <div class="contact-info__block">
+                            <a href="https://goo.gl/maps/q2aP3YZ1Kaob1PP2A" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 384 512">
+                                        <path
+                                            d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>Kiev, Ukraine</span>
+                            </a>
+                            <a href="mailto:roman2003tk@gmail.com" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                                <span>roman2003tk@gmail.com</span>
+                            </a>
+                            <a href="https://consumer.huawei.com/ua/phones/nova-5t/" rel="author"
+                                class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <i class="fas fa-mobile"></i>
+                                </div>
+                                <span>HUAWEI NOVA 5T</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="resume__block">
+                        <h2 class="contact-info__sub-header">ABOUT</h2>
+                        <div class="intro">
+                            <div class="intro__icon-wrapper">
+                                <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p class="intro_text">Hi, I'm 18 years old and I'm a student at KPI! I'm studying in
+                                software engineering. My motto is "life
+                                suffocates without purpose". I am a motivated and
+                                enthusiastic person, who want to become a good specialist. Every
+                                day I wake up and wonder if I am better than I was yesterday.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="resume__block">
+                        <div class="skills" id="info_inside">
+                            <h1 class="skills__header">Skills</h1>
+                            <div id="info">
+                                <button class="skills__elem" disabled>Teamwork</button>
+                                <button class="skills__elem" disabled>Analytical thinking</button>
+                                <button class="skills__elem" disabled>Creativity</button>
+                                <button class="skills__elem" disabled>Stress-resistant</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="resume__block">
+                        <div class="skills" id="info_inside">
+                            <h1 class="skills__header">Experience/Education</h1>
+                            <div id="info">
+                                <div class="main-info fh">
+                                    <div class="experiences">
+                                        <h3 class="experiences__header">Experience</h3>
+                                        <div class="experiences__company">
+                                            <div class="experiences__company-header">
+                                                <h3 class="experiences__company-header-name">Not a lot of my own
+                                                    projects, but I still have everything ahead</h3>
+                                            </div>
+
+                                            <div class="experiences__company-project">
+                                                <h3 class="experiences__company-project-name">My projects</h3>
+                                                <ul class="experiences__company-project-responsibilities">
+                                                    <span class="experiences__company-header-durability">(09/2021 -
+                                                        12/2021)</span>
+                                                    <li>Node.JS parser
+                                                        <p>-This parser was developed for only one site, in order to get
+                                                            information about the products on the page using only
+                                                            requests to
+                                                            the server.</p>
+                                                    </li>
+                                                    <span class="experiences__company-header-durability">(09/2021 -
+                                                        09/2021)</span>
+                                                    <li>Local to do list (Vanilla.JS)
+                                                        <p>-The task was to create a notes app in JS as a web app. Users
+                                                            can
+                                                            add, edit and remove notes.</p>
+                                                    </li>
+                                                    <span class="experiences__company-header-durability">(06/2021 -
+                                                        06/2021)</span>
+                                                    <li>Registration and authorization API
+                                                        <p>
+                                                            -API for users to get the BTC course (regarding the
+                                                            hryvnia).
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="additional-info fv">
+                                        <div class="additional-info__education">
+                                            <h3 class="additional-info__education-header">Education</h3>
+                                            <div class="additional-info__education-university">
+                                                <span
+                                                    class="additional-info__education-university-durability">2009-2020</span>
+                                                <h3 class="additional-info__education-university-speciality">Lutsk
+                                                    educational complex #9
+                                                </h3>
+                                                <p class="additional-info__education-university-name">School
+                                            </div>
+                                            <div class="additional-info__education-university">
+                                                <span
+                                                    class="additional-info__education-university-durability">2020-2024</span>
+                                                <h3 class="additional-info__education-university-speciality">National
+                                                    Technical University of Ukraine 'Kyiv Polytechnic Institute
+                                                </h3>
+                                                <p class="additional-info__education-university-name">Software
+                                                    development
+                                            </div>
+                                        </div>
+
+                                        <div class="additional-info__languages">
+                                            <h3 class="additional-info__languages-header">Languages</h3>
+                                            <p class="additional-info__languages-item">
+                                                Russian (native)
+                                            </p>
+                                            <p class="additional-info__languages-item">
+                                                Ukrainian (native)
+                                            </p>
+                                            <p class="additional-info__languages-item">
+                                                English (B1+)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="resume__block">
+                        <div class="skills" id="info_inside">
+                            <h1 class="skills__header">Programming bars</h1>
+                            <div id="info">
+                                <article class="bars">
+                                    <section class="percentage-bar" data-percent="75%">
+                                        <div class="title"><span>JS</span></div>
+                                        <div class="bar"></div>
+                                        <div class="percent">70%</div>
+                                    </section>
+
+                                    <section class="percentage-bar" data-percent="40%">
+                                        <div class="title"><span>Python</span></div>
+                                        <div class="bar"></div>
+                                    </section>
+                                    <section class="percentage-bar" data-percent="30%">
+                                        <div class="title"><span>Java</span></div>
+                                        <div class="bar"></div>
+                                    </section>
+                                    <section class="percentage-bar" data-percent="30%">
+                                        <div class="title"><span>C/C++</span></div>
+                                        <div class="bar"></div>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="resume__block">
+                        <div class="skills" id="info_inside">
+                            <h1 class="skills__header">I love it &#10084;</h1>
+                            <div id="info">
+                                <div class="container-gallery">
+                                    <div class="card">
+                                        <img src="assets/books.jpg">
+                                        <div class="card__head">Reading books</div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/pride.jpg">
+                                        <div class="card__head">My dog</div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/basketball.jpg">
+                                        <div class="card__head">Basketball</div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/games.jpg">
+                                        <div class="card__head">Games</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/c592d611f3.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
