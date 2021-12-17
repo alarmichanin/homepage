@@ -311,3 +311,78 @@ body {
 .skills__elem:hover {
     box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
   }
+
+  .percentage-bar {
+    background: #fff;
+    display: block;
+    height: 35px;
+    margin-bottom: 15px;
+    position: relative;
+    transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+    transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    -webkit-transition-property: width, background-color;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 14px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 120px;
+    border-radius: 15px;
+}
+
+.title span {
+    background: rgba(0, 0, 0, 0.1);
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.bar {
+    height: 35px;
+    width: 0px;
+    border-radius: 15px;
+}
+
+.percent {
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    display: none;
+}
+
+
+section.percentage-bar:first-child div.title { background: #333333; }
+section.percentage-bar:first-child div.bar { background: #525252; }
+
+section.percentage-bar:nth-child(2) div.title { background: #5d38ff; }
+section.percentage-bar:nth-child(2) div.bar { background: #4350ff; }
+
+section.percentage-bar:nth-child(3) div.title { background: #333333; }
+section.percentage-bar:nth-child(3) div.bar { background:  #525252; }
+
+section.percentage-bar:last-child div.title { background: #5d38ff; }
+section.percentage-bar:last-child div.bar { background: #4350ff; }
+
+.bars{
+    margin: 20px;
+}
