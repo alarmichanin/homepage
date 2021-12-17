@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
     background-color: #7979ff;
 }
 
@@ -267,6 +267,8 @@ body {
 .header__info h1{
     font-size: 300%;
 }
+
+
 .avatar-block{
     flex: 1 1 0%;
 }
